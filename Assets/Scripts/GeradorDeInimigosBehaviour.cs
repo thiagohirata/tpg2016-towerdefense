@@ -3,7 +3,7 @@ using System.Collections;
 
 public class GeradorDeInimigosBehaviour : MonoBehaviour {
 
-    public Transform prefab;
+    public GameObject prefab;
     public int periodo = 10;
     public Transform goal;
     private float ultimoInimigoGerado = 0;
@@ -16,9 +16,14 @@ public class GeradorDeInimigosBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
        if (Time.time - ultimoInimigoGerado > periodo) {
-            Transform inimigoCriado = Instantiate(prefab);
+            Vector3 pos = this.transform.position;
+            Quaternion rot = this.transform.rotation;
+
+            Component inimigoCriado = (Component) Instantiate(prefab, pos, rot);
             ultimoInimigoGerado = Time.time;
+            
             inimigoCriado.GetComponent<NavmeshWalker>().goal = this.goal;
+            
 
        }
     }
