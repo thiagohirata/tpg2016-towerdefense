@@ -39,6 +39,10 @@ public class TowerBehaviour : MonoBehaviour {
             {
                 enemyTarget = nearbyEnemies[0].transform;
             }
+        } else
+        {
+            //faz torre "olhar" para o inimigo
+            this.transform.LookAt(enemyTarget.transform);
         }
         #endregion
 

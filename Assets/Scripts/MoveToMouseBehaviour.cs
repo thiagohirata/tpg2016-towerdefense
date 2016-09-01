@@ -12,7 +12,7 @@ public class MoveToMouseBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(Input.GetAxis("Fire1") != 0) {
+        if(Input.GetButtonUp("Fire2")) {
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
