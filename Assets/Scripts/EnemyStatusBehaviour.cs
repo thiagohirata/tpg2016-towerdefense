@@ -4,7 +4,7 @@ using System.Collections;
 public class EnemyStatusBehaviour : MonoBehaviour {
     public int hitPoints = 10;
 
-    void OnEnable()
+    void Start()
     {
         BroadcastMessage("UpdateHP", this.hitPoints);
     }
@@ -13,7 +13,7 @@ public class EnemyStatusBehaviour : MonoBehaviour {
     /// Veja AttackEnemyBehaviour
     /// </summary>
     /// <param name="damage"></param>
-    void ReceiveDamage(int damage)
+    public void ReceiveDamage(int damage)
     {
         hitPoints -= damage;
         BroadcastMessage("UpdateHP", this.hitPoints); //para atualizar a GUI

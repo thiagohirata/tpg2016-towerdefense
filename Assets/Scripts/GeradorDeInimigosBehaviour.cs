@@ -16,12 +16,12 @@ public class GeradorDeInimigosBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
        if (Time.time - ultimoInimigoGerado > periodo) {
+            ultimoInimigoGerado = Time.time;
+
             Vector3 pos = this.transform.position;
             Quaternion rot = this.transform.rotation;
 
-            Component inimigoCriado = (Component) Instantiate(prefab, pos, rot);
-            ultimoInimigoGerado = Time.time;
-            
+            GameObject inimigoCriado = (GameObject) Instantiate(prefab, pos, rot);
             inimigoCriado.GetComponent<NavmeshWalker>().goal = this.goal;
             
 

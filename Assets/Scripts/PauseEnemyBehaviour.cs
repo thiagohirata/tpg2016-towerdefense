@@ -11,6 +11,7 @@ public class PauseEnemyBehaviour : MonoBehaviour {
         //ver https://docs.unity3d.com/ScriptReference/NavMeshAgent.html
         NavMeshAgent agent = enemy.GetComponent<NavMeshAgent>();
         agent.velocity = Vector3.zero;
+        
 
     }
 }

@@ -32,6 +32,8 @@ public class TowerBehaviour : MonoBehaviour {
                 enemyTarget = null;
             }
         }
+
+
         if (enemyTarget == null)
         {
             //Linha abaixo vai colocar em nearbyEnemies até NEARBY_ENEMIES_ALLOC (2) inimigos! Ver NonAlloc
