@@ -12,16 +12,13 @@ public class MoveToMouseBehaviour : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-        if(Input.GetButtonUp("Fire2")) {
-            RaycastHit hit;
-            Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            if (Physics.Raycast(ray, out hit))
-            {
-                this.transform.position = hit.point;
-                // Do something with the object that was hit by the raycast.
-            }
+        if (Physics.Raycast(ray, out hit))
+        {
+            this.transform.position = hit.point;
+            // Do something with the object that was hit by the raycast.
         }
-
     }
 }
