@@ -292,7 +292,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: deff7e29706254943a97e4fc7ede4402, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  resources: 20
+  resources: 10
   lives: 3
 --- !u!1 &198401741
 GameObject:

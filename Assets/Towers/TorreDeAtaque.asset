@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ded69c0a101ff0459508064d0792e37, type: 3}
   m_Name: TorreDeAtaque
   m_EditorClassIdentifier: 
-  buildingCost: 10
+  buildingCost: 4
   towerConstructorPrefab: {fileID: 181220, guid: b87f3a2ba0dd4dd47a08a528e2db4db1,
     type: 2}
   towerName: Torre de Ataque

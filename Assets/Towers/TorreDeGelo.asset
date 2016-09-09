@@ -11,6 +11,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ded69c0a101ff0459508064d0792e37, type: 3}
   m_Name: TorreDeGelo
   m_EditorClassIdentifier: 
-  buildingCost: 7
+  buildingCost: 3
   towerConstructorPrefab: {fileID: 0}
   towerName: Torre de Gelo
