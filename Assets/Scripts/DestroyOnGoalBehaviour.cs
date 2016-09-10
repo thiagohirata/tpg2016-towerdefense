@@ -11,6 +11,7 @@ public class DestroyOnGoalBehaviour : MonoBehaviour {
     {
         if (other.gameObject.layer == goalLayer)
         {
+            PlayerStatus.main.lives--;
             Destroy(this.gameObject);
         }
     }

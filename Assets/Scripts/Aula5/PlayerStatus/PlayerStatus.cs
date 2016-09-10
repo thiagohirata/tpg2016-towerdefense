@@ -15,6 +15,11 @@ public class PlayerStatus : MonoBehaviour {
         PlayerStatus.main = this;
     }
 
+    void Update()
+    {
+        GameOverController.main.gameOver = (lives == 0);
+    }
+
     public void GiveResources(int r)
     {
         this.resources += r;

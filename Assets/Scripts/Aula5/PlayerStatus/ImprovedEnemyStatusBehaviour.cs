@@ -9,6 +9,12 @@ public class ImprovedEnemyStatusBehaviour : MonoBehaviour {
     void Start()
     {
         BroadcastMessage("UpdateHP", this.hitPoints);
+        GameOverController.main.enemyCount++;
+    }
+
+    void OnDestroy()
+    {
+        GameOverController.main.enemyCount--;
     }
 
     /// <summary>

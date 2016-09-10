@@ -23,7 +23,11 @@ public class WaveReaderBehaviour : MonoBehaviour {
 	
 	
 	void FixedUpdate () {
-	    if(currentStep == null)
+        if(steps.Count == 0 && currentStep == null)
+        {
+            GameOverController.main.waveFinished = true;
+        }
+        if (currentStep == null)
         {
             if(steps.Count > 0) {
                 currentStep = steps.Dequeue();

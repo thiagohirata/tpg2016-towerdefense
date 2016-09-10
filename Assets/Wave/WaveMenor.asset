@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d854dc957470de42855eff92b6e1936, type: 3}
+  m_Name: WaveMenor
+  m_EditorClassIdentifier: 
+  steps:
+  - pause: 5
+    prefab: {fileID: 128048, guid: 86ef7b5b25a12ec41bfc0a4879e4b07d, type: 2}
