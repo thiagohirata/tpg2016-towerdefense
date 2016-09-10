@@ -33,7 +33,7 @@ GameObject:
   - 114: {fileID: 11430736}
   - 114: {fileID: 11427012}
   - 54: {fileID: 5470012}
-  - 114: {fileID: 11478756}
+  - 114: {fileID: 11403752}
   m_Layer: 9
   m_Name: Enemy
   m_TagString: Untagged
@@ -68,7 +68,6 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.2004957, y: 1.4417214, z: 3.6582432}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22462276}
   m_Father: {fileID: 0}
@@ -133,6 +132,19 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &11403752
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 128048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d360b942df51a864c89306ec9c39f247, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hitPoints: 5
+  resourcesWhenDestroyed: 1
 --- !u!114 &11420604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,19 +250,6 @@ MonoBehaviour:
     m_VerticalOverflow: 1
     m_LineSpacing: 1
   m_Text: 15
---- !u!114 &11478756
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 128048}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d360b942df51a864c89306ec9c39f247, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hitPoints: 4
-  resourcesWhenDestroyed: 1
 --- !u!195 &19587126
 NavMeshAgent:
   m_ObjectHideFlags: 1
@@ -305,7 +304,6 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children: []
   m_Father: {fileID: 22462276}
   m_RootOrder: 0
@@ -323,7 +321,6 @@ RectTransform:
   m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071067}
   m_LocalPosition: {x: 0, y: 0, z: 0.015}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_Children:
   - {fileID: 22437248}
   m_Father: {fileID: 435256}

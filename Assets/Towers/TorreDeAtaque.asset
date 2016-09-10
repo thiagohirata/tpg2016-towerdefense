@@ -14,4 +14,4 @@ MonoBehaviour:
   buildingCost: 4
   towerConstructorPrefab: {fileID: 181220, guid: b87f3a2ba0dd4dd47a08a528e2db4db1,
     type: 2}
-  towerName: Torre de Ataque
+  towerName: Attack Tower

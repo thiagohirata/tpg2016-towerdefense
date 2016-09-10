@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Name: TorreDeGelo
   m_EditorClassIdentifier: 
   buildingCost: 3
-  towerConstructorPrefab: {fileID: 0}
+  towerConstructorPrefab: {fileID: 139110, guid: 816a19e33db7e1f42a21061ceb851591,
+    type: 2}
   towerName: Torre de Gelo

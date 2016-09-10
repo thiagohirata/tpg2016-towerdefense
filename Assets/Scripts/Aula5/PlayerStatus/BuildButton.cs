@@ -28,7 +28,7 @@ public class BuildButton : MonoBehaviour {
         }
     }
 
-    void Build()
+    public void Build()
     {
         if (PlayerStatus.main.resources >= towerBuildingMetadata.buildingCost)
         {
